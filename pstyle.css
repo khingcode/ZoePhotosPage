@@ -1,0 +1,1222 @@
+@font-face {
+    font-family: 'CoffeeCake';
+    src: url('path/to/font/CoffeCake.ttf') format('truetype'),
+         url('path/to/font/CoffeCake.woff') format('woff'),
+         url('path/to/font/CoffeCake.otf') format('opentype');
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+body{
+    font-family: 'CoffeCake', sans-serif;
+    background-color: #80471cb3;
+    background-image: url(brownbackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+header {
+    background-color: #E5D3B3; /* coral header background */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    height: 55px;
+  }
+  nav ul h1{
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav ul{
+    float: left;
+    padding: 0px 20px;
+  }
+  header nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+  }
+  header nav ul li a{ /*Edits the text of the list */
+    color: black;
+    display: block;
+    font-size: 22px;
+    padding: 16px 14px;
+    text-decoration: none;
+  }
+  header nav ul li ul{
+    color: black;
+    display: none;
+    position: absolute;
+    background-color: #E5D3B3; /* coral header background */
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
+  } 
+  header nav ul li:hover ul{
+    display: block;
+  } 
+  header nav ul li ul li {
+    width: 200px;
+    border-radius: 4px;
+  }
+  header nav ul li ul li a{
+    text-align: left;
+    padding: 8px 13px;
+  }
+  header nav ul li ul li a:hover{
+    background-color: #cbaa71;
+  }  
+  
+  .desc{
+    background-color:#e5d3b3ba ;
+    text-align: center;
+    margin:50px 299px;
+    font-size: 30px;
+    padding: 20px;
+    position: relative;
+    border-radius: 50px;
+  }
+
+  .desc h1{
+    font-size: 60px;
+  }
+  .desc p{
+    margin-top: 20px;
+  }
+
+
+
+
+/* can be removed for better editing*/
+  
+
+
+.psection {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Centers the circles horizontally */
+  flex-wrap: wrap; /* Allow circles to wrap to the next line */
+}
+
+.circle,.circle1,.circle2,.circle3,
+.circle4, .circle5,.circle6,.circle7,
+.circle8,.circle9,.circle10,.circle11,
+.circle12,.circle13,.circle14,.circle15,.circle16,
+.circle17,.circle18,.circle19,.circle20,.circle21,
+.circle22,.circle23,.circle33,.circle34,.circle35,
+.circle36,.circle37,.circle38,.circle39,.circle40,
+.circle41,.circle42,.circle43,.circle44,.circle45,
+.circle46,.circle47,.circle48,.circle49,.circle50,
+.circle51,.circle52{
+  width: 300px;
+  height: 300px;
+  perspective: 800px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px;
+}
+.circle24,.circle25,.circle26,.circle27,.circle28,
+.circle29,.circle30,.circle31,.circle32{
+  width: 550px;
+  height: 330px;
+  perspective: 800px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px 1px;
+}
+  
+  
+.wrapper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  /*adding front image*/
+.circle .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #a43c3c;
+    background-image: url(coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /*remove to make it a square*/
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.circle1 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #a43c3c;
+    background-image: url(coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle2 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle3 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle4 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle5 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle6 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle7 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle8 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle9 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle10 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle11 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle12 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle13 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle14 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle15 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle16 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle17 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle18 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle19 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle20 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle21 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle22 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle23 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle24 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle25 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle26 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle27 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle28 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle29 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle30 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle31 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle32 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle33 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle34 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle35 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle36 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle37 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle38 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle39 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle40 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle41 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle42 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle43 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle44 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+.circle45 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle46 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle47 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle48 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle49 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle50 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle51 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .circle52 .front,.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #d7912d;
+    background-image: url(coffee.jpg); /*change image*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+
+
+
+
+  /* Adding back image */
+.circle .back {
+    transform: rotateY(-180deg);
+    background-image: url(zoe.jpg);
+  }
+.circle1 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe4.jpg);
+  }
+.circle2 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe5.jpg);
+  }
+.circle3 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe6.jpg);
+  }
+.circle4 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe54.jpg);
+  }
+.circle5 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe50.jpg);
+  }
+.circle6 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe9.jpg);
+  }
+.circle7 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe10.jpg);
+  }
+.circle8 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe3.jpg);
+  }
+.circle9 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe14.jpg);
+  }
+.circle10 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe22.jpg);
+  }
+.circle11 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe51.jpg);
+  }
+.circle12 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe28.jpg);
+  }
+.circle13 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe53.jpg);
+  }
+.circle14 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe26.jpg);
+  }
+.circle15 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe27.jpg);
+  }
+.circle16 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe57.jpg);
+  }
+.circle17 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe29.jpg);
+  }
+.circle18 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe35.jpg);
+  }
+  .circle19 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe56.jpg);
+  }
+.circle20 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe36.jpg);
+  }
+  .circle21 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe40.jpg);
+  }
+  .circle22 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe41.jpg);
+  }
+  .circle23 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe39.jpg);
+  }
+  .circle24 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe12.jpg);
+  }
+  .circle25 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe15.jpg);
+  }
+  .circle26 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe16.jpg);
+  }
+  .circle27 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe17.jpg);
+  }
+  .circle28 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe18.jpg);
+  }
+  .circle29 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe19.jpg);
+  }
+  .circle30 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe20.jpg);
+  }
+  .circle31 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe44.jpg);
+  }
+  .circle32 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe43.jpg);
+  }
+  .circle33 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe30.jpg);
+  }
+  .circle34 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe11.jpg);
+  }
+  .circle35 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe32.jpg);
+  }
+  .circle36 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe33.jpg);
+  }
+  .circle37 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe21.jpg);
+  } 
+  .circle38 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe45.jpg);
+  } 
+  .circle39 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe38.jpg);
+  } 
+  .circle40 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe34.jpg);
+  } 
+  .circle41 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe47.jpg);
+  } 
+  .circle42 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe48.jpg);
+  } 
+  .circle43 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe0.jpg);
+  } 
+  .circle44 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe49.jpg);
+  } 
+ .circle45 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe8.jpg);
+  } 
+  .circle46 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe23.jpg);
+  } 
+  .circle47 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe25.jpg);
+  } 
+  .circle48 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe7.jpg);
+  } 
+  .circle49 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe37.jpg);
+  } 
+  .circle50 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe55.jpg);
+  } 
+  .circle51 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe13.jpg);
+  } 
+  .circle52 .back{
+    transform: rotateY(-180deg);
+    background-image: url(zoe24.jpg);
+  } 
+
+
+
+
+  /* hover and clicked effect for circles/cards*/
+  .circle:hover .wrapper,
+  .circle.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle1:hover .wrapper,
+  .circle1.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle2:hover .wrapper,
+  .circle2.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle3:hover .wrapper,
+  .circle3.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle4:hover .wrapper,
+  .circle4.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle5:hover .wrapper,
+  .circle5.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle6:hover .wrapper,
+  .circle6.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle7:hover .wrapper,
+  .circle7.clicked .wrapper {
+    transform: rotateY(180deg);
+  } 
+  .circle8:hover .wrapper,
+  .circle8.clicked .wrapper {
+    transform: rotateY(180deg);
+  } 
+  .circle9:hover .wrapper,
+  .circle9.clicked .wrapper {
+    transform: rotateY(180deg);
+  } 
+  .circle10:hover .wrapper,
+  .circle10.clicked .wrapper {
+    transform: rotateY(180deg);
+  } 
+  .circle11:hover .wrapper,
+  .circle11.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle12:hover .wrapper,
+  .circle12.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle13:hover .wrapper,
+  .circle13.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle14:hover .wrapper,
+  .circle14.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle15:hover .wrapper,
+  .circle15.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle16:hover .wrapper,
+  .circle16.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle17:hover .wrapper,
+  .circle17.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle18:hover .wrapper,
+  .circle18.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle19:hover .wrapper,
+  .circle19.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle20:hover .wrapper,
+  .circle20.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle21:hover .wrapper,
+  .circle21.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle22:hover .wrapper,
+  .circle22.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle23:hover .wrapper,
+.circle23.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle24:hover .wrapper,
+.circle24.clicked .wrapper {
+  transform: rotateY(180deg);
+}
+.circle25:hover .wrapper,
+.circle25.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle26:hover .wrapper,
+.circle26.clicked .wrapper {
+    transform: rotateY(180deg);
+  }
+  .circle27:hover .wrapper,
+  .circle27.clicked .wrapper {
+      transform: rotateY(180deg);
+    }
+.circle28:hover .wrapper,
+.circle28.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle29:hover .wrapper,
+  .circle29.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle30:hover .wrapper,
+  .circle30.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle31:hover .wrapper,
+  .circle31.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle32:hover .wrapper,
+  .circle32.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle33:hover .wrapper,
+  .circle33.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle34:hover .wrapper,
+  .circle34.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle35:hover .wrapper,
+  .circle35.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle36:hover .wrapper,
+  .circle36.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle37:hover .wrapper,
+  .circle37.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle38:hover .wrapper,
+  .circle38.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle39:hover .wrapper,
+  .circle39.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle40:hover .wrapper,
+  .circle40.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle41:hover .wrapper,
+  .circle41.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle42:hover .wrapper,
+  .circle42.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle43:hover .wrapper,
+  .circle43.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle44:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle45:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle46:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle47:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle48:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle49:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle50:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle51:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+.circle52:hover .wrapper,
+  .circle44.clicked .wrapper {
+        transform: rotateY(180deg);
+     }
+
+
+
+  footer {
+    background-color: #E5D3B3; /* coral footer background */
+    color: rgb(10, 13, 15);
+    text-align: left;
+    padding: 15px;
+    margin-top: 50px;
+  }
